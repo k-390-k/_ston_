@@ -1,0 +1,15 @@
+<section class="l-content-fixed section">
+<header class="section-header">
+  <h2 class="section-title">Login</h2> 
+  <p class="section-subtitle">ログイン</p>
+</header>
+<div class="section-form">
+<%= form_with scope: :session, class: 'form-simple', local: true do |f|%>
+  <p class="form-label"><%= f.label :メールアドレス%></p>
+  <p class="form-input"><%= f.text_field :email%></p>
+  <p class="form-label"><%= f.label :パスワード%></p>
+  <p class="form-input"><%= f.password_field :password%></p>
+  <p class="form-btn-holder"><%= f.button 'ログイン',class: 'btn', type: 'submit'%></p>
+<%end%>
+</div>
+</section>
