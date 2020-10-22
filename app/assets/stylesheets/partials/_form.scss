@@ -1,0 +1,39 @@
+.form-simple {
+    width: 100%;
+    text-align: left;
+}
+
+.form-label {
+    font-size: 1.125rem;
+    font-weight: bold;
+    text-align: left;
+}
+.form-input + .form-label {
+    margin-top: 1.3rem;
+}
+
+.form-input {
+    margin-top: .4rem;
+}
+
+.form-simple {
+    input,textarea {
+      width: 100%;
+      resize: none;
+      padding: 1em;
+      border: 2px solid #333;
+    }
+
+    button[type='submit']{
+        margin-top: 3em;
+    }
+}
+
+.form-btn-holder{
+    text-align: center;
+
+    .btn {
+    background-color: #fff;
+    }
+
+}
