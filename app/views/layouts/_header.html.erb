@@ -5,13 +5,13 @@
   <nav class="nav">
     <ul class="nav-menu">
       <%if current_user%>
-      <%=link_to '新着記事',recipes_path,class: "nav-menu-item"%>
-      <%=link_to '投稿する',new_recipe_path,class: "nav-menu-item"%>
-      <%=link_to 'ログアウト',logout_path,class: "nav-menu-item", method: :delete%>
-      <li class="nav-menu-item"><a class="btn btn_highlighted btn_menuitem"href="#">マイページ</a></li>
+      <li class="nav-menu-item"><%=link_to '新着記事',recipes_path%></li>
+      <li class="nav-menu-item"><%=link_to '投稿する',new_recipe_path%></li>
+      <li class="nav-menu-item"><%=link_to 'ログアウト',logout_path, method: :delete%></li>
+      <li class="nav-menu-item"><%=link_to 'マイページ',user_path(current_user),class: "btn btn_highlighted btn_menuitem"%></li>
       <%else%>
-      <%=link_to '新規登録',new_user_path,class: "nav-menu-item"%>
-      <%=link_to 'ログイン',login_path, class: "nav-menu-item"%>
+      <li class="nav-menu-item"><%=link_to '新規登録',new_user_path%></li>
+      <li class="nav-menu-item"><%=link_to 'ログイン',login_path%></li>
       <%end%>
     </ul>
   </nav>
