@@ -4,9 +4,14 @@
   </h1>
   <nav class="nav">
     <ul class="nav-menu">
+      <%if current_user%>
+      <%=link_to '新着記事',recipes_path,class: "nav-menu-item"%>
+      <%=link_to 'ログアウト',logout_path,class: "nav-menu-item", method: :delete%>
+      <li class="nav-menu-item"><a class="btn btn_highlighted btn_menuitem"href="#">マイページ</a></li>
+      <%else%>
       <%=link_to '新規登録',new_user_path,class: "nav-menu-item"%>
-      <li class="nav-menu-item"><a href="#">ログイン</a></li>
-      <li class="nav-menu-item"><a class="btn btn_highlighted btn_menuitem"href="#">お問い合わせ</a></li>
+      <%=link_to 'ログイン',login_path, class: "nav-menu-item"%>
+      <%end%>
     </ul>
   </nav>
 </header>
