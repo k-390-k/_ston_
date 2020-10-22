@@ -19,6 +19,14 @@ class RecipesController < ApplicationController
   end
 
   def edit
+    @recipe = Recipe.find_by(id: params[:id])
+  end
+
+  def update
+    @recipe = Recipe.find(params[:id])
+    if @recipe.update(recipe_params)
+      redirect_to @recipe
+    end
   end
 
   private 

@@ -1,2 +1,15 @@
-<h1>Recipes#edit</h1>
-<p>Find me in app/views/recipes/edit.html.erb</p>
+<section class="l-content-fixed section">
+<header class="section-header">
+  <h2 class="section-title">Article</h2> 
+  <p class="section-subtitle">記事投稿</p>
+</header>
+<div class="section-form">
+<%= form_with model: @recipe, class: 'form-simple', local: true do |f|%>
+  <p class="form-label"><%= f.label :料理名%></p>
+  <p class="form-input"><%= f.text_field :name%></p>
+  <p class="form-label"><%= f.label :作り方%></p>
+  <p class="form-input"><%= f.text_field :description%></p>
+  <p class="form-btn-holder"><%= f.button '登録する',class: 'btn', type: 'submit'%></p>
+<%end%>
+</div>
+</section>
