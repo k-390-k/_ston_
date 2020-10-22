@@ -1,0 +1,56 @@
+.section {
+    text-align: center;
+    padding: 60px 0;
+    font-size: 1rem;
+}
+
+.section-header {
+    margin: 0 0 2.5em 0;
+    line-height: 1.2;
+}
+
+.section-title {
+    margin: 0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.section-form {
+    width: 60%;
+    margin: 2em auto;
+}
+
+.section-item-img {
+    width: 100%;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+.section-item-info-title > time {
+    margin-right: 1em;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #999;
+}
+
+.section-item-info-title {
+    margin: 0;
+    font-size: 0.875rem;
+    color: skyblue;
+    text-align: left;
+}
+
+.section-item-info {
+    margin: 0.2em 0;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: left;
+    color: #333;
+    line-height: 1.4;
+}
