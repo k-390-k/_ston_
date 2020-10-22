@@ -6,6 +6,7 @@
     <ul class="nav-menu">
       <%if current_user%>
       <%=link_to '新着記事',recipes_path,class: "nav-menu-item"%>
+      <%=link_to '投稿する',new_recipe_path,class: "nav-menu-item"%>
       <%=link_to 'ログアウト',logout_path,class: "nav-menu-item", method: :delete%>
       <li class="nav-menu-item"><a class="btn btn_highlighted btn_menuitem"href="#">マイページ</a></li>
       <%else%>
