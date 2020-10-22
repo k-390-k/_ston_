@@ -1,3 +1,3 @@
 class User < ApplicationRecord
-    has_secure_passoword
+    has_secure_password
 end
