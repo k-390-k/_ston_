@@ -1,0 +1,61 @@
+htbl,body {
+    padding: 0;
+    margin: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+body {
+    color: #333;
+    background-color: white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+#container {
+    min-width: 980px;
+}
+
+.l-content-fixed {
+    width: 980px;
+    margin: 0 auto;
+}
+
+.l-content-expanded {
+    width: auto;
+    margin: 0;
+}
+
+.l-multicolumn {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px -20px;
+}
+
+.l-3column > .l-column{
+    width: calc(100%/3);
+    padding: 0 20px;
+}
