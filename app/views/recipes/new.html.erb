@@ -8,6 +8,8 @@
 <%= form_with model: @recipe, class: 'form-simple', local: true do |f|%>
   <p class="form-label"><%= f.label :料理名%></p>
   <p class="form-input"><%= f.text_field :name%></p>
+  <p class="form-label"><%= f.label :画像%></p>
+  <p class="form-input"><%= f.file_field :picture%></p>
   <p class="form-label"><%= f.label :作り方%></p>
   <p class="form-input"><%= f.text_field :description%></p>
   <p class="form-btn-holder"><%= f.button '登録する',class: 'btn', type: 'submit'%></p>

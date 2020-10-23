@@ -1,5 +1,5 @@
 <section class="article-avatar">
-<img class="article-avatar-img">画像
+<%= image_tag @user.avatar.url, class: 'article-avatar-img'%>
 <div class="article-avatar-info">
   <p class="article-avatar-title">この記事を書いた人</p>
   <p class="article-avatar-name"><%=@user.name%></p>
@@ -17,7 +17,7 @@
  <%@recipes.each do |recipe|%>
   <article>
   <a href="#">
-    <img class="section-item-img">
+  <%= image_tag recipe.picture.url, class: 'section-item-img'%>
     <p class="section-item-info-title">
       <time>2020.2.20</time>
       RECIPE
