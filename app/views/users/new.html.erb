@@ -7,6 +7,8 @@
 <%= form_with model: @user, class: 'form-simple', local: true do |f|%>
   <p class="form-label"><%= f.label :名前%></p>
   <p class="form-input"><%= f.text_field :name%></p>
+  <p class="form-label"><%= f.label :アイコン%></p>
+  <p class="form-input"><%= f.file_field :avatar%></p>
   <p class="form-label"><%= f.label :メールアドレス%></p>
   <p class="form-input"><%= f.text_field :email%></p>
   <p class="form-label"><%= f.label :パスワード%></p>
