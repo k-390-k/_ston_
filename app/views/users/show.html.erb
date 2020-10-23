@@ -9,7 +9,23 @@
 </div>
 </section>
 <section class="l-content-fixed section">
-<%@recipes.each do |recipe|%>
+<header class="section-header">
+  <h2 class="section-title">Recipes</h2> 
+  <p class="section-subtitle">自分の投稿</p>
+</header>
+<div class="l-multicolumn l-3column">
+ <%@recipes.each do |recipe|%>
+  <article>
+  <a href="#">
+    <img class="section-item-img">
+    <p class="section-item-info-title">
+      <time>2020.2.20</time>
+      RECIPE
+    </p>
+    <h3 class="section-item-info">
     <%= recipe.name%>
-    <%= recipe.description%>
-<%end%>
+    </h3>
+  </a>
+  </article>
+  <%end%>
+</div>
