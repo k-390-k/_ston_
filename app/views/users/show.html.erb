@@ -1,2 +1,31 @@
-<h1>Users#show</h1>
-<p>Find me in app/views/users/show.html.erb</p>
+<section class="article-avatar">
+<img class="article-avatar-img">画像
+<div class="article-avatar-info">
+  <p class="article-avatar-title">この記事を書いた人</p>
+  <p class="article-avatar-name"><%=@user.name%></p>
+  <p class="article-avatar-description">
+    東京生まれ、ninebox3年目のデザイナー。自社サービスのUIデザインを担当。週末は猫カフェに生息しています。
+  </p>
+</div>
+</section>
+<section class="l-content-fixed section">
+<header class="section-header">
+  <h2 class="section-title">Recipes</h2> 
+  <p class="section-subtitle">自分の投稿</p>
+</header>
+<div class="l-multicolumn l-3column">
+ <%@recipes.each do |recipe|%>
+  <article>
+  <a href="#">
+    <img class="section-item-img">
+    <p class="section-item-info-title">
+      <time>2020.2.20</time>
+      RECIPE
+    </p>
+    <h3 class="section-item-info">
+    <%= recipe.name%>
+    </h3>
+  </a>
+  </article>
+  <%end%>
+</div>
