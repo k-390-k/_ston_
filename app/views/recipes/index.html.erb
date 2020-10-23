@@ -1,3 +1,12 @@
+<%=@recipes.each do |recipe|%>
+  <%=recipe.name%>
+  <%if recipe.favorited_by?(current_user)%>
+    <p><span>お気に入り解除: </span><%=link_to recipe.favorites.count, recipe_favorites_path(recipe.id), method: :delete %></p> 
+  <%else%>
+    <p><span>お気に入り登録: </span><%=link_to recipe.favorites.count, recipe_favorites_path(recipe.id), method: :post %></p>
+  <%end%>
+<%end%>
+
 <section class="l-content-fixed section">
 <header class="section-header">
   <h2 class="section-title">New Article</h2> 
